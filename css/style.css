@@ -10,8 +10,31 @@
     padding: 0;
 }
 
-body{
-    margin-top: 75px;
+/* top section */
+#top-section {
+    background-color: var(--primary);
+}
+
+#top-section p {
+    margin: 0;
+    color: #fff;
+}
+
+#top-section .social-icons a i {
+    font-size: 1.2rem;
+}
+
+#top-section .social-icons a:hover {
+    margin-left: 1.5rem;
+    color: #000000;
+}
+
+/* menu section  */
+
+div.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .menu-area {
@@ -332,6 +355,7 @@ h5 {
 
 
 /*** Service ***/
+
 .service-item {
     background: var(--light);
     transition: .5s;
@@ -352,11 +376,6 @@ h5 {
 
 
 /*** Categories & Courses ***/
-#category {
-    background-color: var(--bg-color);
-    opacity: 0.9;
-}
-
 .category img,
 .course-item img {
     transition: .5s;
@@ -367,12 +386,14 @@ h5 {
     transform: scale(1.1);
 }
 
-
-/*** Team ***/
-#team-section{
+/*** courses ***/
+#courses{
     background-color: var(--bg-color);
     opacity: 0.9;
 }
+
+/*** Team ***/
+
 .team-item img {
     transition: .5s;
 }
