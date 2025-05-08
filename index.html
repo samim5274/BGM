@@ -144,23 +144,33 @@
         </video>
 
         <!-- Overlay Content -->
-        <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center"
-            style="background: rgba(0, 0, 0, 0.5); z-index: 1;">
-            <div class="row">
-                <div class="col-6">
-                    <div class="text-center text-white px-3">
-                        <h1 class="display-4 font-weight-bold text-light">Shaping Tomorrow with Todays Technology</h1>
-                        <p class="lead">We’re on a mission to help the next generation build income and independence through IT education, freelancing, and job-ready skills</p>
-                        <a href="#" class="btn btn-primary btn-lg mt-3">Explore Courses</a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="text-center text-white px-3">
-                        <img src="img/bgmibd 2.png" alt="" class="img-fluid animated-img">
+        <div class="position-relative w-100 h-100">
+            <!-- Overlay background with content centered -->
+            <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center"
+                style="background: rgba(0, 0, 0, 0.5); z-index: 1;">
+                <div class="container">
+                    <div class="row">
+                        <!-- Left Column: Text content -->
+                        <div class="col-md-6 text-center text-white px-3">
+                            <h1 class="display-4 font-weight-bold text-light">Shaping Tomorrow with Today's Technology</h1>
+                            <p class="lead">Learn the skills that matter—web development, design, marketing—and turn your passion into a profession in today’s digital world.</p>
+                            <a href="#" class="btn btn-primary btn-lg mt-3">Explore Courses</a>
+                        </div>
+        
+                        <!-- Right Column: Image -->
+                        <div class="col-md-6 text-center text-white px-3">
+                            <div class="image-container d-inline-block">
+                                <img src="img/bgmibd 2.png" alt="BGMIBD" class="img-fluid animated-img rounded-4">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        
+            <!-- Optional: Your background image or other content (full-screen) -->
+            <img src="img/background-image.jpg" alt="Background Image" class="w-100 h-100 object-cover">
         </div>
+        
     </div>
     <!-- Head section end -->
 
@@ -233,11 +243,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
                     <h1 class="mb-4">Welcome to BGMI IT</h1>
-                    <p class="mb-4">We are committed to providing you quality and innovative training for RMG sector. We
-                        can be your 1st choice for any professional courses those who are dedicated to build-up their
-                        career in this trade. Our goal is to train professionals in a most innovative & realistic way
-                        with the help of highly qualified expertise who are serving this sector from many years in
-                        various field of garment industry.</p>
+                    <p class="mb-4">We’re on a mission to help the next generation build income and independence through IT education, freelancing, and job-ready skills. We believe in empowering youth with real-world technical knowledge, hands-on training, and opportunities that prepare them for global success. Whether it’s through coding, design, or digital entrepreneurship — we’re shaping future leaders, one skill at a time.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
@@ -276,42 +282,70 @@
                     <h1 class="mb-5">Our Facilities</h1>
                 </div>
                 <div class="row g-4">
+                    
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item text-center pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                                <h5 class="mb-3">Skilled Instructors</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        <div class="card h-100 text-center border-0 shadow-lg rounded-4 bg-white">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-between p-4">
+                                <div class="icon-box bg-primary text-white rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                                    <i class="fa fa-home fa-2x"></i>
+                                </div>
+                                <h5 class="card-title mb-3">24/7 Techers Support</h5>
+                                <p class="card-text mb-4 small">
+                                    We ensure that students never lose their way on the learning journey. Our tutors are always available to assist learners, listen and solve problems, and guide students  project work, and even coding problem so that students never get stuck on the road to education. To further support to our students, we often hold Zoom sessions where current and casual students can share their problems.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item text-center pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                                <h5 class="mb-3">Online Classes</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card h-100 text-center border-0 shadow-lg rounded-4 bg-white">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-between p-4">
+                                <div class="icon-box bg-primary text-white rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                                    <i class="fa fa-graduation-cap fa-2x"></i>
+                                </div>
+                                <h5 class="card-title mb-3">Free Guidance & Career Mentorship</h5>
+                                <p class="card-text mb-4 small">
+                                    Get expert counseling to choose the right path and build your career confidently.
+                                </p>
+                                <ul class="list-unstyled text-start small w-100 px-2">
+                                    <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Career roadmap sessions</li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Freelancing & job guides</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i> Portfolio mentorship</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item text-center pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-home text-primary mb-4"></i>
-                                <h5 class="mb-3">24/7 Techers Support</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card h-100 text-center border-0 shadow-lg rounded-4 bg-white">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-between p-4">
+                                <div class="icon-box bg-primary text-white rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                                    <i class="fa fa-globe fa-2x"></i>
+                                </div>
+                                <h5 class="card-title mb-3">Organized Classroom</h5>
+                                <p class="card-text mb-4 small">
+                                    Our class environment is organized with well-structured for effective learning. The classroom is decorated to ensure the students's
+                                </p>
+                                <ul class="list-unstyled text-start small w-100 px-2">
+                                    <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Interactive classes with industry-level trainers</li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Real-time feedback and guidance</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i> Batch-based learning with structured progress tracking</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item text-center pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
-                                <h5 class="mb-3">Book Library</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card h-100 text-center border-0 shadow-lg rounded-4 bg-white">
+                            <div class="card-body d-flex flex-column align-items-center justify-content-between p-4">
+                                <div class="icon-box bg-primary text-white rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                                    <i class="fa fa-book-open fa-2x"></i>
+                                </div>
+                                <h5 class="card-title mb-3">Video Tutorials</h5>
+                                <p class="card-text mb-4 small">
+                                    All class recordings will be available on our website for students. If anyone misses a session, they can replay the video as many times as needed—until they complete the task or feel confident with the material. Our mission is to offer a flexible learning experience that helps students grow steadily and effectively.
+                                </p>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -1083,9 +1117,11 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <div class="mb-5"><img src="img/mission-1.jpg" alt="img-mission-1.jpg" class="img-fluid"></div>
+                        <div class="mb-5">
+                            <img src="img/mission-1.jpg" alt="img-mission-1.jpg" class="img-fluid motion-updown">
+                        </div>
                     </div>
-                </div>
+                </div>                
             </div>
         </div>
     </div>
@@ -1098,9 +1134,12 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <div class="mb-5"><img src="img/vision-1.jpg" alt="img-mission-1.jpg" class="img-fluid"></div>
+                        <div class="mb-5">
+                            <img src="img/vision-1.jpg" alt="img-mission-1.jpg" class="img-fluid rounded-4 motion-img">
+                        </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">VISION</h6>
                     <h1 class="mb-4">Our Vision</h1>
@@ -1118,24 +1157,25 @@
         <div class="container">
             <div class="text-center wow fadeInUp mb-5" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">FUTURE</h6>
-                <h1 class="">The Future of BGMI IT</h1>
+                
             </div>
-            <div class="row g-4 justify-content-center">
+            <div class="row g-4 justify-content-center">                              
                 <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/bgmibd.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item">
+                        <h1 class="">The Future of BGMI IT</h1>
                         <p class="muted about-p" style="line-height: 2;">We are just beginning—but our vision is big. We aim to grow BGMI IT into a leading IT firm in Bangladesh that not only provides training but also builds software, serves global clients, and creates job opportunities for our own graduates.</p>
                         <p class="muted about-p">We are committed to creating a community of skilled, independent, and future-ready professionals who shape the world with technology—starting today.</p><hr>
                         <h3>“Ready to start your IT journey?</h3>
                         <h6>Join BGMI IT and take your first step toward a skill-based career in freelancing or tech.”</h6>
                     </div>
                 </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item rounded-4 overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid course-img" src="vendors/imgs/future.jpg" alt="Course Image">
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
     </div>

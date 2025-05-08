@@ -269,51 +269,31 @@ h5 {
 }
 
 /*** image moveing animation ***/
+.animated-img {
+    animation: floatLeftRight 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    max-width: 100%; /* Ensures responsiveness */
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
 
 @keyframes floatLeftRight {
     0% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
     25% {
-      transform: translate(-20px, -20px);
+        transform: translate(-20px, -20px);
     }
     50% {
-      transform: translate(0, -25px);
+        transform: translate(0, -25px);
     }
     75% {
-      transform: translate(20px, -20px);
+        transform: translate(20px, -20px);
     }
     100% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
-  }
-  
-  @keyframes floatLeftRightHover {
-    0% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(-20px, -20px);
-    }
-    50% {
-      transform: translate(0, -30px);
-    }
-    75% {
-      transform: translate(20px, -20px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-  
-  .animated-img {
-    animation: floatLeftRight 4s ease-in-out infinite;
-    transition: animation 0.3s ease;
-  }
-
-  .animated-img:hover {
-    animation: floatLeftRightHover 2s ease-in-out infinite;
-  }
+}
 
 
 @media (max-width: 768px) {
@@ -537,10 +517,62 @@ h5 {
     text-align: justify;
 }
 
+
+/*** mission ***/
+
+.motion-updown {
+    border-radius: 1rem; /* Apply rounded corners */
+    animation: moveUpDown 3s ease-in-out infinite; /* Apply constant up-down motion */
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move 10px upwards */
+    }
+    100% {
+        transform: translateY(0); /* Return to the original position */
+    }
+}
+
+
+/*** vision us section ***/
+.motion-img {
+    border-radius: 1rem; 
+    animation: moveImage 2s linear infinite; 
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+
 .vision-p{
     text-align: justify;
 }
 
+/*** Future ***/
+
+.course-img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.course-img:hover {
+    transform: scale(1.1); 
+}
+
+/*** FAQ ***/
 .faq-section {
     max-width: 800px;
     margin: auto;
@@ -585,6 +617,20 @@ h5 {
     margin-top: 10px;
   }
   
+/*** facilities ***/
+#facilities .card {
+    border-radius: 1.5rem; /* Matches rounded-4 */
+    transition: transform 0.3s ease;
+}
+
+#facilities .card:hover {
+    transform: translateY(-5px);
+}
+
+#facilities .icon-box {
+    background: linear-gradient(135deg, #4e5ddf, #1cc8b1); 
+}
+
 
 /*** Footer ***/
 .footer .btn.btn-social {
