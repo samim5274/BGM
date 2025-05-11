@@ -70,6 +70,12 @@ h5 {
     color: #01f2ff;
 }
 
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+  color: #fff;
+}
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -227,6 +233,9 @@ h5 {
 }
 
 /*** Header carousel ***/
+#head-section b {
+    color: var(--primary);
+}
 
 .head-body{
     width: 100%;
@@ -554,6 +563,7 @@ h5 {
 
 #courses .join-now:hover {
   background: var(--bg-color);
+  color: #181d38;
 }
 
 
