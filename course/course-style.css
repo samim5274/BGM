@@ -12,6 +12,10 @@
     box-sizing: border-box; /* Optional but commonly added for layout predictability */
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
 .icon-color {
   color: var(--primary);
 }
@@ -52,7 +56,7 @@
 }
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary); /* bright cyan on hover */
+    color: var(--bg-color-warning); /* bright cyan on hover */
 }
 
 .navbar .dropdown-menu {
@@ -152,6 +156,19 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* head section  */
 
 #head-section-course {
@@ -199,20 +216,20 @@
 
 /* Position and stagger animation delays */
 .dot-1  { top: 100%; left: 5%;  animation-delay: 0s; }
-.dot-2  { top: 95%;  left: 10%; animation-delay: 1s; }
-.dot-3  { top: 98%;  left: 15%; animation-delay: 2s; }
-.dot-4  { top: 100%; left: 20%; animation-delay: 3s; }
-.dot-5  { top: 97%;  left: 25%; animation-delay: 4s; }
-.dot-6  { top: 100%; left: 30%; animation-delay: 5s; }
-.dot-7  { top: 96%;  left: 35%; animation-delay: 6s; }
-.dot-8  { top: 100%; left: 40%; animation-delay: 7s; }
-.dot-9  { top: 98%;  left: 45%; animation-delay: 8s; }
-.dot-10 { top: 100%; left: 50%; animation-delay: 9s; }
-.dot-11 { top: 97%;  left: 60%; animation-delay: 10s; }
-.dot-12 { top: 100%; left: 65%; animation-delay: 11s; }
-.dot-13 { top: 95%;  left: 70%; animation-delay: 12s; }
-.dot-14 { top: 100%; left: 80%; animation-delay: 13s; }
-.dot-15 { top: 100%; left: 90%; animation-delay: 14s; }
+.dot-2  { top: 100%;  left: 10%; animation-delay: 1.5s; }
+.dot-3  { top: 100%;  left: 15%; animation-delay: 0.5s; }
+.dot-4  { top: 100%; left: 20%; animation-delay: 2.5s; }
+.dot-5  { top: 100%;  left: 25%; animation-delay: 0.8s; }
+.dot-6  { top: 100%; left: 30%; animation-delay: 1s; }
+.dot-7  { top: 100%;  left: 35%; animation-delay: 1.5s; }
+.dot-8  { top: 100%; left: 40%; animation-delay: 3s; }
+.dot-9  { top: 100%;  left: 45%; animation-delay: 2s; }
+.dot-10 { top: 100%; left: 50%; animation-delay: 1s; }
+.dot-11 { top: 100%;  left: 60%; animation-delay: 4s; }
+.dot-12 { top: 100%; left: 65%; animation-delay: 3s; }
+.dot-13 { top: 100%;  left: 70%; animation-delay: 1.5s; }
+.dot-14 { top: 100%; left: 80%; animation-delay: 1s; }
+.dot-15 { top: 100%; left: 90%; animation-delay: 0.5s; }
 
 /* Ensure your main content stays on top */
 #head-section-course > .container-xxl {

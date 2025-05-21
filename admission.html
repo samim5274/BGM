@@ -129,68 +129,73 @@
       <h2 class="fw-bold display-4">Admission Form</h2>
       <h3 class="fw-bold display-6">50% off</h3>
     </div>
-    <form class="row g-4 shadow p-4 rounded-4" style="background-color: #f8f9fa;" onsubmit="event.preventDefault(); sendMail();">
-      <!-- Name -->
-      <div class="col-md-4">
-        <label for="name" class="form-label">Name*</label>
-        <input type="text" class="form-control" id="name" name="user_name" required>
-      </div>
-      <!-- Email -->
-      <div class="col-md-4">
-        <label for="email" class="form-label">Email*</label>
-        <input type="email" class="form-control" id="email" name="user_email" required>
-      </div>
-      <!-- Mobile -->
-      <div class="col-md-4">
-        <label for="mobile" class="form-label">Mobile No.*</label>
-        <input type="tel" class="form-control" id="mobile" name="user_mobile" required>
-      </div>
-      <!-- Course -->
-      <div class="col-md-6">
-        <label for="course" class="form-label">Choose Your Course</label>
-        <select class="form-select" id="course" name="course" required>
-            <option selected disabled value="">-- Select Course --</option>
-            <option value="front-end-development">Front-End Development</option>
-            <option value="back-end-development">Back-End Development</option>
-            <option value="full-stack-developer">Full Stack Developer</option>
-            <option value="graphic-design">Graphic Design</option>
-            <option value="ui-ux-design">UI/UX Design</option>
-            <option value="motion-graphics">Motion Graphics</option>
-            <option value="advance-graphic-design">Advance Graphic Design</option>
-            <option value="digital-marketing">Digital Marketing</option>
-            <option value="seo">SEO</option>
-            <option value="social-media-marketing">Social Media Marketing</option>
-        </select>
-      </div>
-      <!-- DOB -->
-      <div class="col-md-6">
-        <label for="dob" class="form-label">Date of Birth*</label>
-        <input type="date" class="form-control" id="dob" required>
-      </div>
-      <!-- Present Address -->
-      <div class="col-md-6">
-        <label for="present-address" class="form-label">Your Present Address*</label>
-        <textarea class="form-control" id="present-address" rows="3" required></textarea>
-      </div>
-      <!-- Permanent Address -->
-      <div class="col-md-6">
-        <label for="permanent-address" class="form-label">Your Permanent Address*</label>
-        <textarea class="form-control" id="permanent-address" rows="3" required></textarea>
-      </div>
-      <!-- Qualification -->
-      <div class="col-12">
-        <label for="qualification" class="form-label">Academic Qualification</label>
-        <input type="text" class="form-control" id="qualification">
-      </div>
-      <!-- Message -->
-      <div class="col-12">
-        <label for="message" class="form-label">Your Message</label>
-        <textarea class="form-control" id="message" rows="4"></textarea>
-      </div>
-      <!-- Submit -->
-      <div class="col-12 text-center">
-        <button type="submit" class="btn btn-warning px-5 py-2 fw-bold rounded-pill">SEND</button>
-      </div>
+    <form id="admission-form" class="row g-4 shadow p-4 rounded-4" style="background-color: #f8f9fa;" onsubmit="event.preventDefault(); sendMail();">
+        <!-- Name -->
+        <div class="col-md-4">
+            <label for="name" class="form-label">Name*</label>
+            <input type="text" class="form-control" id="name" name="user_name" required>
+        </div>
+        <!-- Email -->
+        <div class="col-md-4">
+            <label for="email" class="form-label">Email*</label>
+            <input type="email" class="form-control" id="email" name="user_email" required>
+        </div>
+        <!-- Mobile -->
+        <div class="col-md-4">
+            <label for="mobile" class="form-label">Mobile No.*</label>
+            <input type="tel" class="form-control" id="mobile" name="user_mobile" required>
+        </div>
+        <!-- Course -->
+        <div class="col-md-6">
+            <label for="course" class="form-label">Choose Your Course</label>
+            <select class="form-select" id="course" name="course" required>
+                <option selected disabled value="">-- Select Course --</option>
+                <option value="front-end-development">Front-End Development</option>
+                <option value="back-end-development">Back-End Development</option>
+                <option value="full-stack-developer">Full Stack Developer</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="ui-ux-design">UI/UX Design</option>
+                <option value="motion-graphics">Motion Graphics</option>
+                <option value="advance-graphic-design">Advance Graphic Design</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="seo">SEO</option>
+                <option value="social-media-marketing">Social Media Marketing</option>
+            </select>
+        </div>
+        <!-- DOB -->
+        <div class="col-md-6">
+            <label for="dob" class="form-label">Date of Birth*</label>
+            <input type="date" class="form-control" id="dob" required>
+        </div>
+        <!-- Present Address -->
+        <div class="col-md-6">
+            <label for="present-address" class="form-label">Your Present Address*</label>
+            <textarea class="form-control" id="present-address" rows="3" required></textarea>
+        </div>
+        <!-- Permanent Address -->
+        <div class="col-md-6">
+            <label for="permanent-address" class="form-label">Your Permanent Address*</label>
+            <textarea class="form-control" id="permanent-address" rows="3" required></textarea>
+        </div>
+        <!-- Qualification -->
+        <div class="col-12">
+            <label for="qualification" class="form-label">Academic Qualification</label>
+            <input type="text" class="form-control" id="qualification">
+        </div>
+        <!-- Message -->
+        <div class="col-12">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="4"></textarea>
+        </div>
+        <!-- Submit -->
+        <div class="col-12 text-center">
+            <button type="submit" id="submitBtn" class="btn btn-warning px-5 py-2 fw-bold rounded-pill">SEND</button>
+        </div>
+        <div id="loader" class="mt-3" style="display: none;">
+            <div class="spinner-border text-secondary" role="status">
+                <span class="visually-hidden">Sending...</span>
+            </div>
+        </div>
     </form>
   </div>
 </section>
@@ -297,6 +302,12 @@
     <script src="js/admission.js"></script>
 <script>
     function sendMail() {
+        const submitBtn = document.getElementById('submitBtn');
+        const loader = document.getElementById('loader');
+
+        loader.style.display = "block";
+        submitBtn.disabled = true;
+
     let parms = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -314,8 +325,12 @@
     emailjs.send("service_1oikhyo", "template_wm1rnxf", parms)
         .then(function () {
             alert("Email sent successfully!");
-        }, function (error) {
-            alert("Failed to send email: " + JSON.stringify(error));
+            document.getElementById("admission-form").reset();
+        }).catch(function (error){
+            alert("Failed to send message. Please try again.");
+        }).finally(()=> {
+            loader.style.display = "none";
+            submitBtn.disabled = false;
         });
 }
 </script>
