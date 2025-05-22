@@ -13,12 +13,52 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+    font-family: Roboto;
 }
 
 .icon-color {
   color: var(--primary);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* top section */
 #top-section {
@@ -33,6 +73,26 @@ h1, h2, h3, h4, h5, h6 {
 #top-section .social-icons a i {
     font-size: 1.2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -141,19 +201,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
 
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
+
+
+
+
+
+
 
 
 
@@ -240,6 +294,28 @@ h1, h2, h3, h4, h5, h6 {
 #head-section-course img {
     border-radius: 20px;
 }
+
+
+#Enroll{
+    background-color: var(--bg-color-warning);
+    color: var(--light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -375,6 +451,28 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* price section  */
 #course-price {
     z-index: 1020; /* higher than default content */
@@ -384,8 +482,30 @@ h1, h2, h3, h4, h5, h6 {
     position: sticky;
     top: 0;
     z-index: 1020;
-    background-color: white; /* Ensure it's not transparent */
+    background-color: white;
 }
+
+#course-price a{
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* software section */
@@ -400,46 +520,212 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* course curriculum  */
 
 .curriculum-section {
-  background-color: #f9f9fb;
-  border-radius: 20px;
+    background-color: #f9f9fb;
+    border-radius: 20px;
 }
 
 .curriculum-list {
-  list-style: none;
-  padding-left: 0;
-  text-align: center;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
 }
 
 .curriculum-list li {
-  padding: 6px 0;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    padding: 6px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.curriculum-list li i{
+    color: var(--bg-color-warning);
 }
 
 .curriculum-list input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  accent-color: #0d6efd;
+    width: 16px;
+    height: 16px;
+    accent-color: #0d6efd;
 }
 
 
-/* career-opportunity-section  */
 
-#career-opportunity-section {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* career-opportunities basick graphic design file  */
+
+#career-opportunities {
   background-color: var(--bg-color);
 }
+
+#career-opportunities .rounded-4{
+    border-radius: 10px;
+}
+
+
+#career-opportunities i{
+    color: var(--primary);
+}
+
+
+
+/* career opportunity advance file */
+#career-opportunities i {
+    color: var(--primary);
+}
+
+
+/* motion-career-scope  */
+#motion-career-scope i {
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+/* who-can-join-basic-graphic-design */
+#who-can-join-basic-graphic-design i {
+    color: var(--primary);
+}
+
+
+.badge-box {
+    background-color: #fff;
+    border: 2px solid #dee2e6;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+.badge-box:hover {
+    background-color: #d6d6d6;
+    transform: scale(1.03);
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* job opening section */
 
 #job-opening-section .container{
-  background-color: #f9f9fb;
-  border-radius: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
 }
+
+#job-opening-section i {
+    color: var(--primary);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #job-opening-section .bg-color {
   /* background-color: var(--bg-color); */
@@ -450,6 +736,53 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* why-choose */
+#why-choose i {
+    color: var(--primary);
+}
+#why-choose .card{
+    transition: all 0.3s ease;
+}
+#why-choose .card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* back-end file */
 
 #backend-career-opportunity {
@@ -459,6 +792,29 @@ h1, h2, h3, h4, h5, h6 {
 #who-can-join-back-end .bg-light{
     border-radius: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* digital marketing file */
 
@@ -471,11 +827,74 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* social media marketing file */
 
 #who-can-join {
     background-color: var(--bg-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*** Footer ***/
 .footer .btn.btn-social {
@@ -552,4 +971,22 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--dark);
     background-color: var(--bg-color);
     border-radius: 5px;
+}
+
+
+.back-to-top {
+    background-color: var(--primary);
+    color: var(--light);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+
+
+.back-to-top:hover {
+    background-color: var(--dark);
+    color: var(--bg-color-warning);
 }

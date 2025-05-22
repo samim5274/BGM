@@ -35,6 +35,12 @@
 
 <body>
 
+
+
+
+
+
+
     <!-- top section start -->
     <section id="top-section" class="top-section d-none d-lg-block">
         <div class="container">
@@ -60,6 +66,21 @@
         </div>
     </section>
     <!-- top section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Navbar Start -->
    <div class="sticky">
@@ -111,8 +132,8 @@
 
             <li class="nav-item"><a href="404.html" class="nav-link">Software</a></li>
             <li class="nav-item"><a href="404.html" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#about-us" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="404.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             <li class="nav-item"><a href="login/login.html" class="nav-link px-4">Login</a></li>
             </ul>
         </div>
@@ -121,86 +142,156 @@
     </div>
     <!-- Navbar End -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Courses Start -->
     <!-- Admission Section -->
-<section id="admission" class="py-5" style="background-color: #fff;">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold display-4">Admission Form</h2>
-      <h3 class="fw-bold display-6">50% off</h3>
-    </div>
-    <form id="admission-form" class="row g-4 shadow p-4 rounded-4" style="background-color: #f8f9fa;" onsubmit="event.preventDefault(); sendMail();">
-        <!-- Name -->
-        <div class="col-md-4">
-            <label for="name" class="form-label">Name*</label>
-            <input type="text" class="form-control" id="name" name="user_name" required>
-        </div>
-        <!-- Email -->
-        <div class="col-md-4">
-            <label for="email" class="form-label">Email*</label>
-            <input type="email" class="form-control" id="email" name="user_email" required>
-        </div>
-        <!-- Mobile -->
-        <div class="col-md-4">
-            <label for="mobile" class="form-label">Mobile No.*</label>
-            <input type="tel" class="form-control" id="mobile" name="user_mobile" required>
-        </div>
-        <!-- Course -->
-        <div class="col-md-6">
-            <label for="course" class="form-label">Choose Your Course</label>
-            <select class="form-select" id="course" name="course" required>
-                <option selected disabled value="">-- Select Course --</option>
-                <option value="front-end-development">Front-End Development</option>
-                <option value="back-end-development">Back-End Development</option>
-                <option value="full-stack-developer">Full Stack Developer</option>
-                <option value="graphic-design">Graphic Design</option>
-                <option value="ui-ux-design">UI/UX Design</option>
-                <option value="motion-graphics">Motion Graphics</option>
-                <option value="advance-graphic-design">Advance Graphic Design</option>
-                <option value="digital-marketing">Digital Marketing</option>
-                <option value="seo">SEO</option>
-                <option value="social-media-marketing">Social Media Marketing</option>
-            </select>
-        </div>
-        <!-- DOB -->
-        <div class="col-md-6">
-            <label for="dob" class="form-label">Date of Birth*</label>
-            <input type="date" class="form-control" id="dob" required>
-        </div>
-        <!-- Present Address -->
-        <div class="col-md-6">
-            <label for="present-address" class="form-label">Your Present Address*</label>
-            <textarea class="form-control" id="present-address" rows="3" required></textarea>
-        </div>
-        <!-- Permanent Address -->
-        <div class="col-md-6">
-            <label for="permanent-address" class="form-label">Your Permanent Address*</label>
-            <textarea class="form-control" id="permanent-address" rows="3" required></textarea>
-        </div>
-        <!-- Qualification -->
-        <div class="col-12">
-            <label for="qualification" class="form-label">Academic Qualification</label>
-            <input type="text" class="form-control" id="qualification">
-        </div>
-        <!-- Message -->
-        <div class="col-12">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea class="form-control" id="message" rows="4"></textarea>
-        </div>
-        <!-- Submit -->
-        <div class="col-12 text-center">
-            <button type="submit" id="submitBtn" class="btn btn-warning px-5 py-2 fw-bold rounded-pill">SEND</button>
-        </div>
-        <div id="loader" class="mt-3" style="display: none;">
-            <div class="spinner-border text-secondary" role="status">
-                <span class="visually-hidden">Sending...</span>
+    <section id="admission" class="py-5" style="background-color: #fff;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-4">Admission Form</h2>
+                <h3 class="fw-bold display-6">50% off</h3>
+                <p class="text-muted">Build your future with industry-demand skills. Fill in the form and our team will reach out shortly.</p>
             </div>
+            <form id="admission-form" class="row g-4 shadow p-4 rounded-4" style="background-color: #f8f9fa;" onsubmit="event.preventDefault(); sendMail();">
+                <!-- Name -->
+                <div class="col-md-4">
+                    <label for="name" class="form-label">Name*</label>
+                    <input type="text" class="form-control" id="name" name="user_name" required>
+                </div>
+                <!-- Email -->
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="email" name="user_email" required>
+                </div>
+                <!-- Mobile -->
+                <div class="col-md-4">
+                    <label for="mobile" class="form-label">Mobile No.*</label>
+                    <input type="tel" class="form-control" id="mobile" name="user_mobile" required>
+                </div>
+                <!-- Course -->
+                <div class="col-md-6">
+                    <label for="course" class="form-label">Choose Your Course</label>
+                    <select class="form-select" id="course" name="course" required>
+                        <option selected disabled value="">-- Select Course --</option>
+                        <option value="front-end-development">Front-End Development</option>
+                        <option value="back-end-development">Back-End Development</option>
+                        <option value="full-stack-developer">Full Stack Developer</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="ui-ux-design">UI/UX Design</option>
+                        <option value="motion-graphics">Motion Graphics</option>
+                        <option value="advance-graphic-design">Advance Graphic Design</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="seo">SEO</option>
+                        <option value="social-media-marketing">Social Media Marketing</option>
+                    </select>
+                </div>
+                <!-- DOB -->
+                <div class="col-md-6">
+                    <label for="dob" class="form-label">Date of Birth*</label>
+                    <input type="date" class="form-control" id="dob" required>
+                </div>
+                <!-- Present Address -->
+                <div class="col-md-6">
+                    <label for="present-address" class="form-label">Your Present Address*</label>
+                    <textarea class="form-control" id="present-address" rows="3" required></textarea>
+                </div>
+                <!-- Permanent Address -->
+                <div class="col-md-6">
+                    <label for="permanent-address" class="form-label">Your Permanent Address*</label>
+                    <textarea class="form-control" id="permanent-address" rows="3" required></textarea>
+                </div>
+                <!-- Qualification -->
+                <div class="col-12">
+                    <label for="qualification" class="form-label">Academic Qualification</label>
+                    <input type="text" class="form-control" id="qualification">
+                </div>
+                <!-- Message -->
+                <div class="col-12">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+                <!-- Submit -->
+                <div class="col-12 text-center">
+                    <button type="submit" id="submitBtn" class="btn btn-warning px-5 py-2 fw-bold rounded-pill">SEND</button>
+                </div>
+                <div id="loader" class="mt-3" style="display: none;">
+                    <div class="spinner-border text-secondary" role="status">
+                        <span class="visually-hidden">Sending...</span>
+                    </div>
+                </div>
+            </form>
         </div>
-    </form>
-  </div>
-</section>
+    </section>
     <!-- Courses End -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- call section start -->
+    <section class="admission-cta-section py-5" id="admission-cta-section">
+        <div class="container text-center">
+            <div class="cta-box p-4 p-md-5 shadow-lg mx-auto" style="max-width: 700px;">
+                <h2 class="fw-bold mb-3">Ready to Start Your Graphic Design Journey?</h2>
+                <p class="lead mb-4">Secure your spot in the course today and unlock endless creative opportunities.</p>
+
+                <a href="#admission" class="btn btn-primary text-light px-4 py-2 fs-5 rounded-pill">Apply for Admission</a>
+
+                <div class="mt-4">
+                    <p class="text-danger-emphasis fw-semibold bg-warning-subtle d-inline-block px-3 py-2 rounded-3 mt-3">
+                    <i class="fa-solid fa-lock"></i> Note: All information is safe and confidential.
+                    </p>
+                    <p class="mt-3 fs-5">
+                        <strong>Need help?</strong><br>
+                        <a href="tel:01787226675" class="text-decoration-none fw-semibold text-dark"><i class="fa-solid fa-phone"></i> +880 1787-226675</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- call section start -->
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <!-- Footer Start -->
     <div id="footer">
         <div class="container-fluid bg-dark text-light footer pt-5  wow fadeIn" data-wow-delay="0.1s">

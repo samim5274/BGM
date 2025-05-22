@@ -59,6 +59,7 @@
     });
 
 
+
     // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,
@@ -103,36 +104,29 @@
 function filterCourses(category) {
     const buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
 
-    const items = document.querySelectorAll('.course-item');
+    const clickedButton = document.querySelector(`[data-category="${category}"]`);
+    if (clickedButton) clickedButton.classList.add('active');
+
+    const items = document.querySelectorAll('.filter-card');
     items.forEach(item => {
-      if (category === 'all' || item.dataset.category === category) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
+        if (category === 'all' || item.dataset.category === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
     });
-  }
+}
+
 
   // courses
 
-  function filterCourses(category) {
-    // Update active button
-    const buttons = document.querySelectorAll('.filter-btn');
-    buttons.forEach(btn => btn.classList.remove('active'));
-
-    const clickedBtn = document.querySelector(`.filter-btn[data-category="${category}"]`);
-    if (clickedBtn) clickedBtn.classList.add('active');
-
-    // Show/Hide courses (optional)
-    const courses = document.querySelectorAll('.course-card');
-    courses.forEach(course => {
-      if (category === 'all' || course.dataset.category === category) {
-        course.parentElement.style.display = 'block';
-      } else {
-        course.parentElement.style.display = 'none';
-      }
+function scrollSlider(direction) {
+    const slider = document.getElementById('categorySlider');
+    const scrollAmount = slider.offsetWidth / 1.5;
+    slider.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
     });
   }
 

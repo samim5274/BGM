@@ -44,7 +44,7 @@
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -210,6 +210,7 @@
 
 
 
+    
 
 
 
@@ -218,37 +219,50 @@
 
 
 
+<!-- Subject Section Start -->
+    <div class="category-slider-section position-relative border-bottom shadow-sm">
+        <!-- Left Arrow -->
+        <button class="slider-arrow left" onclick="scrollSlider(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
 
-    <!-- subject section start -->
-    <div class="category-slider-section">
+        <!-- Slider -->
         <div class="category-slider" id="categorySlider">
             <div class="category-card">
-            <div class="category-icon" style="color: red;"><i class="fas fa-palette"></i></div>
-            <div class="category-title">Graphic & Multimedia</div>
+                <div class="category-icon" style="color: red;"><i class="fas fa-palette"></i></div>
+                <div class="category-title">Graphic & Multimedia</div>
             </div>
             <div class="category-card">
-            <div class="category-icon" style="color: deeppink;"><i class="fas fa-code"></i></div>
-            <div class="category-title">Web & Software</div>
+                <div class="category-icon" style="color: deeppink;"><i class="fas fa-code"></i></div>
+                <div class="category-title">Web & Software</div>
             </div>
             <div class="category-card">
-            <div class="category-icon" style="color: purple;"><i class="fas fa-bullhorn"></i></div>
-            <div class="category-title">Digital Marketing</div>
+                <div class="category-icon" style="color: purple;"><i class="fas fa-bullhorn"></i></div>
+                <div class="category-title">Digital Marketing</div>
             </div>
             <div class="category-card">
-            <div class="category-icon" style="color: mediumslateblue;"><i class="fas fa-cube"></i></div>
-            <div class="category-title">3D Animation & Visualization</div>
+                <div class="category-icon" style="color: mediumslateblue;"><i class="fas fa-cube"></i></div>
+                <div class="category-title">3D Animation & Visualization</div>
             </div>
             <div class="category-card">
-            <div class="category-icon" style="color: black;"><i class="fas fa-film"></i></div>
-            <div class="category-title">Film & Media</div>
+                <div class="category-icon" style="color: black;"><i class="fas fa-film"></i></div>
+                <div class="category-title">Film & Media</div>
             </div>
             <div class="category-card">
-            <div class="category-icon" style="color: orange;"><i class="fas fa-language"></i></div>
-            <div class="category-title">English Language</div>
+                <div class="category-icon" style="color: orange;"><i class="fas fa-language"></i></div>
+                <div class="category-title">English Language</div>
             </div>
         </div>
+
+        <!-- Right Arrow -->
+        <button class="slider-arrow right" onclick="scrollSlider(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
     </div>
-    <!-- subject section end -->
+<!-- Subject Section End -->
+
+
+
 
 
 
@@ -264,7 +278,7 @@
 
 
     <!-- About Start -->
-    <section id="about-us-top">
+    <section id="about-us-top" class="border-bottom shadow-sm">
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5">
@@ -274,32 +288,31 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <h4 class="text-start text-primary pe-3">About Us</h4>
+                        <h4 class="text-start pe-3">About Us</h4>
                         <h1 class="mb-4">Welcome to BGMI IT</h1>
                         <p class="mb-4">We’re on a mission to help the next generation build income and independence through IT education, freelancing, and job-ready skills. We believe in empowering youth with real-world technical knowledge, hands-on training, and opportunities that prepare them for global success. Whether it’s through coding, design, or digital entrepreneurship — we’re shaping future leaders, one skill at a time.</p>
                         <div class="row gy-2 gx-4 mb-4">
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Skilled Instructors</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Online Classes</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate
+                                <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>International Certificate
                                 </p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Skilled Instructors</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                                <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Online Classes</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate
+                                <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>International Certificate
                                 </p>
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="#">Read More</a>
                     </div>
                 </div>
             </div>
@@ -426,7 +439,7 @@
                                 <button type="button" class="btn filter-btn" data-category="digital" onclick="filterCourses('digital')">Digital Marketing</button>
                             </div>
                         </div>                                          
-                      </div>
+                    </div>
                 </div>
                 <div class="row justify-content-center">
                     
@@ -438,22 +451,23 @@
                                     <!-- <span class="course-badge">Bestseller</span> -->
                                 </div>
                                 <div class="course-body">
-                                <div class="course-title"><a href="course/full-stack-web-development.html">Full Stack Development</a></div>
-                                
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="course-price">৳ 50,000.00</div>
-                                    </div>
-                                    <div class="col-lg-6  justify-content-end">
-                                        <div class="course-rating">
-                                            <span class="stars">Feedback: ★★★★★</span>
+                                    <div class="course-title">
+                                        <a href="course/full-stack-web-development.html">Full Stack Development</a>
+                                    </div>                                
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="course-price">৳ 50,000.00</div>
+                                        </div>
+                                        <div class="col-lg-6  justify-content-end">
+                                            <div class="course-rating">
+                                                <span class="stars">Feedback: ★★★★★</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="course-actions">
-                                    <a href="admission-2.html" target="_blank" class="button-21">Admission</a>
-                                    <a href="admission.html" class="button-20">Get 50% off</a>
-                                </div>
+                                    <div class="course-actions">
+                                        <a href="admission-2.html" target="_blank" class="button-21">Admission</a>
+                                        <a href="admission.html" class="button-20">Get 50% off</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -968,7 +982,7 @@
     <!-- Footer End -->
     
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-fixed-bottom btn-fixed-bottom btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-fixed-bottom btn-fixed-bottom btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->    

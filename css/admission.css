@@ -252,14 +252,6 @@ div.sticky {
  */
 
 
-
-
-
-
-
-
-
-
 #loader {
   margin-top: 10px;
   color: #555;
@@ -269,6 +261,35 @@ div.sticky {
 
 
 
+
+
+
+
+
+/* call section  */
+
+.admission-cta-section {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+}
+
+.cta-box {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #5c64d1;
+}
+
+#admission-cta-section i {
+    color: var(--primary);
+}
 
 
 
