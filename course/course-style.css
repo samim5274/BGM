@@ -98,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*** Navbar ***/
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -117,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bg-color-warning); /* bright cyan on hover */
+    color: var(--bg-color-warning); 
 }
 
 .navbar .dropdown-menu {
@@ -135,6 +136,15 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotateX(-75deg);
     transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 }
+
+.dropdown-menu a.dropdown-item:focus,
+.dropdown-menu a.dropdown-item:active,
+.dropdown-menu a.dropdown-item:visited {
+    color: inherit !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+}
+
 
 .navbar .nav-item:hover > .dropdown-menu {
     opacity: 1;
@@ -231,6 +241,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--bg-color);
     overflow: hidden;
     z-index: 1;
+}
+
+.text-color {
+    color: #ff0000;
 }
 
 .card-details{
@@ -486,7 +500,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white;
 }
 
-#course-price a{
+#course-price a {
     background-color: var(--primary);
     color: var(--light);
     border-radius: 5px;
@@ -1033,6 +1047,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.footer img {
+    width: 150px;
+    height: 150px;
 }
 
 .btn-fixed-bottom{

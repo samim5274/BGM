@@ -108,14 +108,6 @@ div.sticky {
     font-weight: 700 !important;
 }
 
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
-}
-
 .icon {
     color: rgb(6, 187, 204);
 }
@@ -198,6 +190,16 @@ div.sticky {
     transform: rotateX(-75deg);
     transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 }
+
+
+.dropdown-menu a.dropdown-item:focus,
+.dropdown-menu a.dropdown-item:active,
+.dropdown-menu a.dropdown-item:visited {
+    color: inherit !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+}
+
 
 .navbar .nav-item:hover > .dropdown-menu {
     opacity: 1;
@@ -384,13 +386,22 @@ div.sticky {
     border-right: none;
 }
 
-.btn-fixed-bottom{
-    background-color: var(--primary);
-    color: var(--bg-color);
+
+.footer img {
+  width: 150px;
+  height: 150px;
 }
 
-.btn-fixed-bottom:hover {
-    color: var(--dark);
-    background-color: var(--bg-color);
-    border-radius: 5px;
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.btn-color {
+  background-color: var(--primary);
+  color: var(--light);
 }

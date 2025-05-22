@@ -202,6 +202,16 @@ div.sticky {
     transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 }
 
+
+.dropdown-menu a.dropdown-item:focus,
+.dropdown-menu a.dropdown-item:active,
+.dropdown-menu a.dropdown-item:visited {
+    color: inherit !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+}
+
+
 .navbar .nav-item:hover > .dropdown-menu {
     opacity: 1;
     visibility: visible;
@@ -672,6 +682,13 @@ div.sticky {
     padding-right: 0;
     border-right: none;
 }
+
+
+.footer img {
+  width: 150px;
+  height: 150px;
+}
+
 
 .btn-fixed-bottom{
     background-color: var(--primary);
