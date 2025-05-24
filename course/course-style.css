@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 2rem;
     animation:  infinite;
     animation-delay: 0.3s;
-    animation: rotateShapeReverse 4s linear infinite;
+    animation: rotateShapeReverse 5s linear infinite;
 }
 
 /* Triangle — Rotate */
@@ -377,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 2rem;
     left: 2rem;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    animation: rotateShape 4s linear infinite;
+    animation: rotateShape 5s linear infinite;
     animation-delay: 0.6s;
 }
 
