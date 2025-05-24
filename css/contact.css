@@ -286,32 +286,76 @@ div.sticky {
 
 
 #loader {
-  margin-top: 10px;
-  color: #555;
-  font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
 }
 
 
 
 
+/* course-section */
 
-
-
-
-
-
-
-
-
-/* location section */
-#location-section{
-    background-color: var(--bg-color);
+.course-section {
+    background: linear-gradient(to right, #fad0c4, #ffd1ff, #e1f4ff);
+    border-radius: 50px 50px 0 0;
+    padding: 3rem 2rem;
+    position: relative;
 }
 
+    .course-box {
+    text-align: center;
+    color: #333;
+}
 
-#location-section iframe{
+    .icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
     border-radius: 20px;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
 }
+
+    .icon-short { background-color: #00c38a; }
+    .icon-expert { background-color: #e93cac; }
+    .icon-micro { background-color: #20d3e4; }
+    .icon-degree { background-color: #4a5bf9; }
+
+    /* Optional: responsive spacing */
+    @media (max-width: 767px) {
+    .course-box {
+    margin-bottom: 2rem;
+    }
+}
+
+    /* Optional dots (decorative) */
+    .dot-left, .dot-right {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: radial-gradient(#5500ff 20%, transparent 20%);
+    background-size: 10px 10px;
+    opacity: 0.3;
+}
+
+    .dot-left {
+    top: 20px;
+    left: 20px;
+}
+
+    .dot-right {
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(180deg);
+}
+
+
+
+
 
 
 
