@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: Inter,sans-serif;
+  font-family: Roboto;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -176,9 +176,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--light);
   cursor: pointer;
   display: inline-block;
-  font-family: Inter,sans-serif;
+  font-family: Roboto;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5;
   margin: 0;
   padding: .5rem 1rem;

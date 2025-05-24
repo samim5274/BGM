@@ -127,3 +127,10 @@ function sendMail() {
             submitBtn.disabled = false;
         });
 };
+
+  // footer section
+    fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('include-footer').innerHTML = data;
+    });

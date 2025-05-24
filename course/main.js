@@ -61,6 +61,16 @@
 })(jQuery);
 
 
+
+  // footer section
+    fetch('../footer.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('include-footer').innerHTML = data;
+    });
+
+
+
 // course image head
 // Helper function to add image
 
