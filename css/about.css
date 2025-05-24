@@ -414,41 +414,47 @@ div.sticky {
 
 
 /*** FAQ ***/
-
-  .custom-accordion-btn {
+.custom-accordion-btn {
     font-weight: 600;
-    color:var(--bg-color-warning);
+    color: var(--bg-color-warning);
     background-color: var(--bg-color);
-  }
+}
 
-  .accordion-button::after {
+/* Icon styling */
+.accordion-button::after {
     content: "+";
     font-size: 1.5rem;
     color: var(--bg-color-warning);
     transform: rotate(0deg);
     background-image: none !important;
-  }
+}
 
-  .accordion-button:not(.collapsed)::after {
+.accordion-button:not(.collapsed)::after {
     content: "−";
     font-size: 1.5rem;
-    color: var(--bg-color-warning);
-  }
+    color: var(--bg-color);
+}
 
-  .accordion-button:focus {
+/* Clicked/Opened Accordion Button */
+.accordion-button:not(.collapsed) {
+  background-color: var(--bg-color-warning); /* 👈 background on click */
+  color: #fff; /* 👈 text color on click */
+}
+
+.accordion-button:focus {
     box-shadow: none;
-  }
+}
 
-  .accordion-body ul {
+.accordion-body ul {
     list-style: none;
     display: block;
     padding-left: 1.2rem;
-  }
+}
 
-  .accordion-item {
+.accordion-item {
     border: none;
     border-bottom: 1px solid #f1f1f1;
-  }
+}
 
 
 
