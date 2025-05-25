@@ -412,33 +412,32 @@ div.sticky {
 
 
 
-
-/*** FAQ ***/
+/*** FAQ Styles ***/
 .custom-accordion-btn {
     font-weight: 600;
-    color: var(--bg-color-warning);
-    background-color: var(--bg-color);
+    color: var(--bg-color-warning) !important;
+    background-color: var(--bg-color) !important;
 }
 
-/* Icon styling */
+/* Accordion Icon Styling */
 .accordion-button::after {
-    content: "+";
+    content: "+" !important;
     font-size: 1.5rem;
-    color: var(--bg-color-warning);
-    transform: rotate(0deg);
+    color: var(--bg-color-warning) !important;
     background-image: none !important;
+    transform: rotate(0deg);
 }
 
 .accordion-button:not(.collapsed)::after {
-    content: "−";
+    content: "−" !important;
     font-size: 1.5rem;
     color: var(--bg-color);
 }
 
-/* Clicked/Opened Accordion Button */
+/* Active Accordion Button */
 .accordion-button:not(.collapsed) {
-  background-color: var(--bg-color-warning); /* 👈 background on click */
-  color: #fff; /* 👈 text color on click */
+    background-color: var(--bg-color-warning);
+    color: #fff;
 }
 
 .accordion-button:focus {
@@ -447,17 +446,17 @@ div.sticky {
 
 .accordion-body ul {
     list-style: none;
-    display: block;
     padding-left: 1.2rem;
+}
+
+.accordion-body li {
+    margin-bottom: 0.5rem;
 }
 
 .accordion-item {
     border: none;
     border-bottom: 1px solid #f1f1f1;
 }
-
-
-
 
 
 

@@ -137,3 +137,31 @@ function scrollSlider(direction) {
     .then(data => {
         document.getElementById('include-footer').innerHTML = data;
     });
+
+
+    // teacher section slider 
+
+    const track = document.getElementById("carousel-track");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    const scrollAmount = 260; // Card width + margin
+
+    nextBtn.addEventListener("click", () => {
+        track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
+
+    prevBtn.addEventListener("click", () => {
+        track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
+
+    // Auto-slide every 3 seconds
+    setInterval(() => {
+        track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+
+        // Optional: Reset scroll to beginning if at end (basic loop)
+        if (track.scrollLeft + track.clientWidth >= track.scrollWidth) {
+            track.scrollTo({ left: 0, behavior: "smooth" });
+        }
+    }, 3000);
+
