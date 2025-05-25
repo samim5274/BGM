@@ -690,18 +690,18 @@ div.sticky {
 
 
 .footer img {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
 }
 
 
-.btn-fixed-bottom{
-    background-color: var(--primary);
-    color: var(--bg-color);
-}
 
-.btn-fixed-bottom:hover {
-    color: var(--dark);
-    background-color: var(--bg-color);
-    border-radius: 5px;
-}
+
+
+
+
+
+
+
+
+

@@ -54,7 +54,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0});
         return false;
     });
 
@@ -138,6 +138,12 @@ function scrollSlider(direction) {
         document.getElementById('include-footer').innerHTML = data;
     });
 
+    // side fixed section
+    fetch('sideFixedButton.html').then(res => res.text())
+    .then(data => {
+        document.getElementById('include-side-fixed').innerHTML = data;
+    });
+
 
     // teacher section slider 
 
@@ -164,4 +170,3 @@ function scrollSlider(direction) {
             track.scrollTo({ left: 0, behavior: "smooth" });
         }
     }, 3000);
-
