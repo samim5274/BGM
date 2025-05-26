@@ -130,7 +130,6 @@ function scrollSlider(direction) {
     });
   }
 
-
   // footer section
     fetch('footer.html')
     .then(res => res.text())
