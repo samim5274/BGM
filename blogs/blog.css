@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero-section {
+    background: linear-gradient(to right, #4e73df, #224abe);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    }
+    .hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    }
+    .hero-section p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    }
+    .section-title {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    border-bottom: 3px solid #224abe;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    .section-title i {
+    color: #224abe;
+    }
+    .highlight-box {
+    background-color: #f0f4ff;
+    border-left: 5px solid #224abe;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    }
+    .blog-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    }
+    ul {
+    padding-left: 1.5rem;
+    }
+    ul li {
+    margin-bottom: 0.75rem;
+    }
+    blockquote {
+    font-style: italic;
+    color: #555;
+    }

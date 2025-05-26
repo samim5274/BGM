@@ -170,3 +170,16 @@ function scrollSlider(direction) {
             track.scrollTo({ left: 0, behavior: "smooth" });
         }
     }, 3000);
+
+    let text1 = document.getElementById("blog-title-1").innerText;
+    let text2 = document.getElementById("blog-title-2").innerText;
+    let text3 = document.getElementById("blog-title-3").innerText;
+
+    let slicedText1 = text1.length > 30 ? text1.slice(0, 30) + "..." : text1;
+    let slicedText2 = text2.length > 30 ? text2.slice(0, 30) + "..." : text2;
+    let slicedText3 = text3.length > 30 ? text3.slice(0, 30) + "..." : text3;
+
+    document.getElementById("dynamicText1").innerText = slicedText1;
+    document.getElementById("dynamicText2").innerText = slicedText2;
+    document.getElementById("dynamicText3").innerText = slicedText3;
+
