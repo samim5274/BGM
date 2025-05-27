@@ -30,7 +30,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
 }
 
-
+.bg-text{
+    background-color: var(--primary);
+    color: var(--light);
+}
 
 
 
@@ -396,6 +399,52 @@ div.sticky {
 .border-primary{
     border-color: var(--primary) !important;
 }
+
+
+
+
+
+
+
+
+
+
+/* digital marketing file  */
+.card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.category-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.card i {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+
+#support-section{
+    background-color: var(--bg-color);
+    padding: 50px;
+}
+
+
+
+#support-section .card {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#support-section .card:hover {
+    transform: scale(1.05);
+}
+
+
+
+
 
 
 
