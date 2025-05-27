@@ -351,6 +351,34 @@ div.sticky {
 }
 
 
+.timeline {
+    position: relative;
+    margin-left: 1rem;
+    padding-left: 2rem;
+    border-left: 3px solid var(--primary);
+}
+.timeline-step {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.timeline-step::before {
+    content: '';
+    position: absolute;
+    left: -1.2rem;
+    top: 5px;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#course-highlights{
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(2, 15, 49, 0.1);
+}
 
 
 
