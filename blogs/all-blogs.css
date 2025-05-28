@@ -475,6 +475,27 @@ div.sticky {
 
 
 
+/* admission file */
+#course-section{
+    background-color: var(--bg-color);
+}
+
+#course-section .card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#course-section .card ul li {
+    padding-left: 1rem;
+    position: relative;
+}
+#course-section .card ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+
 
 
 
