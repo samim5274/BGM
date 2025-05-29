@@ -126,9 +126,10 @@ function scrollSlider(direction) {
     const scrollAmount = slider.offsetWidth / 1.5;
     slider.scrollBy({
       left: direction * scrollAmount,
-      behavior: 'smooth'
-    });
-  }
+        behavior: 'smooth'
+        });
+    }
+
 
   // footer section
     fetch('footer.html')
