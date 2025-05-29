@@ -522,7 +522,9 @@ box-shadow: 0 2px var(--primary);
 
 
 
-
+#about-software-section img{
+    border-radius: 15px;
+}
 
 
 
