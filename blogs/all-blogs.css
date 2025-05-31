@@ -149,6 +149,8 @@ div.sticky {
     position: sticky;
     top: 0;
     z-index: 999;
+    background-color: #ffffff;
+box-shadow: 0 2px var(--primary);
 }
 
 .menu-area {
@@ -168,15 +170,9 @@ div.sticky {
     padding: 5px 0;
 }
 
-
-.bg-light {
-    opacity: 0.9;
-}
-
 .navbar{
-    box-shadow: 2px 2px 5px #3292a6;
-    background: #fff;
-    opacity: 0.9;
+
+    background: var(--light);
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -313,6 +309,12 @@ div.sticky {
         opacity: 1;
     }
 }
+
+
+
+
+
+
 
 
 

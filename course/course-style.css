@@ -10,11 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto; 
+    font-family: 'Roboto',Arial, sans-serif; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Roboto;
+    font-family: 'Roboto',Arial, sans-serif;
 }
 
 .icon-color {
@@ -498,7 +498,7 @@ box-shadow: 0 2px var(--primary);
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: Roboto;
+  font-family: 'Roboto',Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -560,7 +560,7 @@ box-shadow: 0 2px var(--primary);
   color: var(--light);
   cursor: pointer;
   display: inline-block;
-  font-family: Roboto;
+  font-family: 'Roboto',Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;

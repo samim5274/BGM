@@ -1,3 +1,10 @@
+// top section
+    fetch('top-section.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('top-section').innerHTML = data;
+    });
+    
 (function ($) {
     "use strict";
 
