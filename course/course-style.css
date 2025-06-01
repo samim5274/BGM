@@ -149,7 +149,7 @@ box-shadow: 0 2px var(--primary);
 
 
 .icon {
-    color: rgb(6, 187, 204);
+    color: var(--primary);
 }
 
 
