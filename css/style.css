@@ -15,16 +15,22 @@
 b, p {
   font-family: 'Roboto',Arial, sans-serif;
 }
+
 a {
     color: var(--primary);
     font-family: 'Roboto',Arial, sans-serif;
 }
+
 a:hover {
     color: var(--dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto',Arial, sans-serif;
+}
+
+.bg-color {
+  background-color: var(--primary);
 }
 
 /* top section */
@@ -1416,7 +1422,7 @@ box-shadow: 0 2px var(--primary);
 }
 
 #facilities .icon-box {
-    background: linear-gradient(135deg, var(--primary));
+    background: var(--primary);
     color: #fff;
     border-radius: 1rem;
     padding: 1rem;
