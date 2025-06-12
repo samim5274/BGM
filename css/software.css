@@ -431,6 +431,20 @@ box-shadow: 0 2px var(--primary);
 
 
 
+.feature-icon {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* price section  */
@@ -528,6 +542,24 @@ box-shadow: 0 2px var(--primary);
 
 
 
+
+
+
+
+
+
+
+
+/* FAQ */
+#faq{
+    background-color: var(--bg-color);
+}
+
+.accordion-button:not(.collapsed){
+    color: #000 !important;
+    background-color: var(--bg-color) !important;
+    box-shadow: 0 0 0 .25rem rgba(0, 108, 117, 0.25);
+}
 
 
 
