@@ -13,6 +13,14 @@
     font-family: 'Roboto',Arial, sans-serif; 
 }
 
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--bg-color-warning);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto',Arial, sans-serif;
 }
