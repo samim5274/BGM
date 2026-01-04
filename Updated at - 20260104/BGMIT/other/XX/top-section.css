@@ -1,0 +1,65 @@
+:root {
+    --primary: #5472d2;
+    --light: #F0FBFC;
+    --dark: #414183;
+    --bg-color: #fffbf6;
+    --bg-color-warning: #ff9900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+a {
+    color: var(--primary);
+}
+a:hover {
+    color: var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto;
+}
+
+
+
+
+
+
+/* top section */
+#top-section {
+    background-color: var(--primary);
+}
+
+#top-section p {
+    margin: 0;
+    color: #fff;
+}
+
+#top-section .social-icons a i {
+    font-size: 1.2rem;
+}
+
+
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - BGMIT</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/bgmibd.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+
+    <!-- Libraries Stylesheet -->
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="all-blogs.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+
+    
+    
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- top section start -->
+    <div id="top-section"></div>
+    <!-- top section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Navbar Start -->
+    <div class="sticky">
+        <div class="col-12 container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
+            <a class="navbar-brand d-flex align-items-center px-4 px-lg-5" href="../index.html">
+                <img src="../img/bgmibd.png" class="img-fluid" width="120" height="120" alt="Logo">
+            </a>
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link ">Home</a>
+                </li>
+
+                <!-- Mega Menu Dropdown -->
+                <li class="nav-item dropdown position-static">
+                    <a href="#" class="nav-link dropdown-toggle" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Courses
+                    </a>
+                    <div class="dropdown-menu w-100 mt-0" aria-labelledby="coursesDropdown" style="border-top: 3px solid #5472d2;">
+                        <div class="container">
+                            <div class="row py-4 px-5">
+                                <div class="col-sm-6 col-lg-4">
+                                    <h5><i class="fa-solid fa-images me-2"></i> Graphic Design</h5>
+                                    <a href="../course/basic-graphic-design.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> Basic Graphic Design</a>
+                                    <a href="../course/advance-graphic-design.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> Advance Graphic Design</a>
+                                    <a href="../course/motion-graphic-design.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> Motion Graphic Design</a>
+                                    <a href="../course/ux-ui-graphic-design.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> UI/UX Design</a>
+                                </div>
+                                
+                                <div class="col-sm-6 col-lg-4">
+                                    <h5><i class="fa-solid fa-chart-column me-2"></i> Digital Marketing</h5>
+                                    <a href="../course/digital-marketing.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> Digital Marketing</a>
+                                    <a href="../course/seo.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> SEO</a>
+                                    <a href="../course/social-media-marketing.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> Social Media Marketing</a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <h5><i class="fa-solid fa-code me-2"></i> Software Development</h5>
+                                    <a href="../course/full-stack-web-development.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> Full Stack Developer</a>
+                                    <a href="../course/font-end-development.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> Frontend Developer</a>
+                                    <a href="../course/back-end-development.html" class="dropdown-item"><i class="fa-solid fa-caret-right me-2"></i> Backend Development (PHP & Laravel)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item"><a href="../software.html" class="nav-link">Software</a></li>
+                <li class="nav-item"><a href="../blog.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link ">Contact</a></li>
+                <li class="nav-item"><a href="../login/login.html" class="nav-link px-4">Login</a></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+
+
+
+<!-- blog page start  -->
+    <section id="blog-list-section" class="blog-list-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog-list">
+                        <div class="blog-head">
+                            <h1 class="display-3 mb-4">Basic Graphic Design</h1>
+                            <p>Why not start your career in Freelancing? Graphic design is a course which will help you to earn money by freelancing and BGM IT is here to help you to find your earning source in marketplace.</p>
+                        </div>
+                        <div class="img-head py-5">
+                            <img src="img/graphic/bgmit-blog-graphic-design.jpeg" alt="">
+                        </div>
+                        <p>Now a days a Graphic Designer is the valuable position in every aspect of the world. In Job field or in marketplace Graphic design can be your first choice to build your career. No matter if you are a student or job holder or job seeker or business owner or freelancer, graphic design course can help you to shape your….  and help you to find earning source in market place  </p>
+                        <h3>What You'll Learn in This Blog:</h3>
+                        <div class="row">
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item">Why choose Graphic Design?</li>
+                                <li class="list-group-item">Career opportunities after completing the course</li>
+                                <li class="list-group-item">High-demand graphic design elements and top marketplaces</li>
+                                <li class="list-group-item">Ai tools use in Graphic Design </li>
+                            </ul>
+                        </div>
+                        <div class="blog-list">
+                            <h3>Why Graphic Design is the best choice?</h3>
+                            <p>Nothing can be embellished more without color, shape and design. Let’s know how colorize our dream by using the tools of Graphic Color. From design to color, identity of a business, T-shirt, Poster, Flyer, Business Card, logo, image we can create and draw through the use of Adobe Photoshop and Adobe Illustrator which are the common software to use graphics design. Why not give a pattern to our design to our style knowing these tools. Our best creativity we can sell to our local market place and international marketplace like fiveer ,freepik, upwork, 99design, canva, Freelance and to many more. Keep in touch to the BGM IT to make the stare of your success.</p>
+                        </div>
+                        <div class="blog-list">
+                            <h3>Career opportunities after completing the course:</h3>
+                            <p>In a world there is no company whose need not a Graphic Designer. To create a company logo, business card design, id card design, Company Boucher design ,nothing can be possible to create without a graphic designer. Without any farther let’s grab the opportunity to redesign our company by ourselves. </p>
+                        </div>
+
+                        <div class="container py-5">
+                            <div class="card shadow-lg border-0">
+                                <div class="card-body">
+                                    <h2 class="card-title text-color mb-4">Career in Social Media Marketing</h2>
+                                    <p class="mb-4">A career in Social Media Marketing offers flexibility and global reach through various paths:</p>
+                                    
+                                    <div class="timeline">
+                                    <div class="timeline-step">
+                                        <h5>Freelancing on platforms</h5>
+                                        <p class="text-muted mb-0">Work on Fiverr, Upwork, PeoplePerHour to find clients and projects globally.</p>
+                                    </div>
+                                    <div class="timeline-step">
+                                        <h5>Agency or In-house Roles</h5>
+                                        <p class="text-muted mb-0">Join marketing agencies, media companies, or corporate in-house marketing teams.</p>
+                                    </div>
+                                    <div class="timeline-step">
+                                        <h5>Building Personal Brands</h5>
+                                        <p class="text-muted mb-0">Grow your own brand or help small businesses scale through strategic content.</p>
+                                    </div>
+                                    <div class="timeline-step">
+                                        <h5>E-commerce Product Marketing</h5>
+                                        <p class="text-muted mb-0">Drive sales using targeted social media ads on platforms like Facebook and Instagram.</p>
+                                    </div>
+                                    <div class="timeline-step">
+                                        <h5>Remote International Jobs</h5>
+                                        <p class="text-muted mb-0">Work with clients around the world in flexible remote roles.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quote + Paragraph Design Block -->
+                        <div class="container my-5">
+                            <h3>High-demand graphic design elements and top marketplaces: </h3>
+                            <div class="p-4 bg-light rounded shadow-sm position-relative border-start border-4 border-primary">
+                                <blockquote class="blockquote mb-3">
+                                <p class="fs-5 fst-italic text-color">
+                                    <i class="bi bi-quote fs-3 me-2 text-secondary"></i>
+                                    “The path does not create the traveler; the traveler creates the path.”
+                                </p>
+                                </blockquote>
+                                <p class="mb-0 text-dark">
+                                Graphic design is like a <strong>storehouse</strong> filled with opportunities — design, create, reshape, colorize, and more.
+                                You can <strong>choose your own path</strong> to build your career within this vibrant field.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog-list">
+                            <h3>AI tools use in Graphic Design</h3>
+                            <p>Today’s we are on the hand of AI. Is there any field where we cannot we use AI (Artificial Intelligence)? If the question raises the answer will be “no”. So why are you lagging behind? Let’s know the use of AI in designing with the hand of BGMIT.</p>
+                        </div>
+                        <div class="blog-list">
+                            <h3>The Courses of Graphic Design</h3>
+                            <p>Take a tour to the field of Graphic Design and which software and which work we can choose to be a designer.</p>
+                        </div>
+                        <!-- Software Tools Section -->
+                        <div class="container my-5">
+                            <h3 class="mb-4 fw-bold">Software You'll Learn</h3>
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="d-flex align-items-center p-3 shadow-sm rounded bg-light">
+                                        <i class="bi bi-palette fs-2 icon-color me-3"></i>
+                                        <span class="fw-medium">Adobe Photoshop</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center p-3 shadow-sm rounded bg-light">
+                                        <i class="bi bi-vector-pen fs-2 icon-color me-3"></i>
+                                        <span class="fw-medium">Adobe Illustrator</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center p-3 shadow-sm rounded bg-light">
+                                        <i class="bi bi-camera-reels fs-2 icon-color me-3"></i>
+                                        <span class="fw-medium">Adobe Premiere Pro</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center p-3 shadow-sm rounded bg-light">
+                                        <i class="bi bi-journal-richtext fs-2 icon-color me-3"></i>
+                                        <span class="fw-medium">Adobe InDesign</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center p-3 shadow-sm rounded bg-light">
+                                        <i class="bi bi-layout-text-window fs-2 icon-color me-3"></i>
+                                        <span class="fw-medium">Adobe XD</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center p-3 shadow-sm rounded bg-light">
+                                        <i class="bi bi-easel fs-2 icon-color me-3"></i>
+                                        <span class="fw-medium">Adobe After Effect</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <h3 class="fw-bold mb-4 text-center">Why We’re the Best</h3>
+
+                            <div class="row g-4 justify-content-center">
+                                <!-- Intro Text -->
+                                <div class="col-12 col-md-10 text-center">
+                                <p class="lead">
+                                    We offer more than just a decorated classroom — we provide industry-ready training with expert guidance.
+                                </p>
+                                </div>
+
+                                <section class="py-5" id="course-highlights">
+                                    <div class="container">
+                                        <h3 class="text-center mb-5">Course Highlights</h3>
+                                        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="bi bi-film fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>48 Lectures</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="bi bi-book fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>Professional Course Modules</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="bi bi-tools fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>Practical Classes</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="bi bi-clock-history fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>24/7 Online Guidelines</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="fa-solid fa-infinity fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>Lifetime Support</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="bi bi-briefcase fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>Career Placement Support</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="fa-solid fa-coins fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>Low Cost Admission</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="bi bi-award fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>Certificate Provided</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="fa-solid fa-person-circle-check fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>Classes by Experienced Freelancers</strong></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
+                                            <i class="bi bi-compass fs-3 icon-color me-3"></i>
+                                            <div class="ms-1"><strong>100% Guidelines for Freelancing and Jobs</strong></div>
+                                            </div>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                    </section>
+
+
+
+                                <div class="text-center mt-5">
+                                    <h3 class="text-center display-5 mt-5">Summarize</h3><hr>
+                                    <p class="lead fw-semibold">Color, shape, and design are the most exquisite ways to enhance anything. Let's discover how to use graphic design tools to bring our dreams to life. The most widely used programs in the graphic design industry, Adobe Photoshop and Adobe Illustrator, can be used to create anything, from color to design, and from business identity to T-shirts, posters, flyers, business cards, logos, and images.</p>
+                                    <p class="lead fw-semibold">Why not become proficient with these tools to give our designs a style and our creativity a pattern?</p>
+                                    <h6 class="text-center display-6 text-color mt-5"><i>“To begin your path to success, stay in touch with BGMI IT”</i></h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <h3 class="mb-4">Search</h3>
+                        <form action="#" method="GET" class="mb-4">
+                            <input type="text" class="form-control" placeholder="Search for blogs..." name="search">
+                            <button type="submit" class="btn btn-color mt-2">Search</button>
+                        </form>       
+                    </div>
+                    <div class="sidebar">
+                        <h3 class="mb-4">Categories</h3>
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item"><a href="#">Graphic Design</a></li>
+                            <li class="list-group-item"><a href="#">Digital Marketing</a></li>
+                            <li class="list-group-item"><a href="#">Web Development</a></li>
+                            <li class="list-group-item"><a href="#">Software Development</a></li>
+                            <li class="list-group-item"><a href="#">SEO</a></li>
+                            <li class="list-group-item"><a href="#">Social Media Marketing</a></li>
+                        </ul>       
+                    </div>
+                    <div class="sidebar">
+                        <img src="img/graphic/bgmit-blog-graphic-6.jpg" alt="">
+                        <hr>
+                        <img src="img/graphic/bgmit-blog-graphic-7.jpg" alt="">
+                    </div>
+                    <div class="sidebar">
+                        <img src="img/graphic/bgmit-blog-graphic-8.jpg" alt="">
+                    </div>
+                    <div class="sidebar">
+                        <img src="img/graphic/bgmit-blog-graphic-2.jpg" alt="">
+                        <hr>
+                        <img src="img/graphic/bgmit-blog-graphic-3.jpg" alt="">
+                    </div>
+                    <div class="sidebar">
+                        <img src="img/graphic/bgmit-blog-graphic-1.jpg" alt="">
+                        <hr>
+                        <img src="img/graphic/bgmit-blog-graphic-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+</section>
+    <!-- blog page end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div id="include-footer"></div>
+    <!-- Footer End -->
+
+
+
+
+    
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-color btn-lg-square pt-2 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="all-blogs.js"></script>
+
+
+
+</body>
+
+</html>
